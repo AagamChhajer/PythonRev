@@ -6,3 +6,6 @@ from llama_parse import LlamaParse
 llm = Ollama(model="llama3.2", request_timeout=30.0)
 result = llm.complete("Hello Machaaa")
 print(result)
+
+
+prompt_template = LlamaParse().__str__
